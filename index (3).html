@@ -9,24 +9,31 @@
         <h1>Formulario de registro</h1>
     </header>
     <form>
-        <div id="name">
-            <label id="name-label">Nombre:</label>
-            <input type="text" name="name" id="name-form">
-        </div> <br>
-        <div id="surname">
-            <label id="surname-label">Apellido:</label>
-            <input type="text" name="surname" id="surname-form">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre"> <br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido">
         </div> <br>
         <div>
-            <label>Sexo:</label>     
-            <input type="radio">hombre
-            <input type="radio">mujer
-        </div> <br>
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="hombre">
+            <label for="hombre">Hombre</label>
+            <input type="radio" id="mujer">
+            <label for="mujer">Mujer</label>
+        </div><br>
         <div>
-            <input type="checkbox"> Deseo recibir información sobre novedades y ofertas <br> <br>
-            <input type="checkbox">Declaro haber leído y aceptar las condiciones genereales del programa y la normativa sobre protección de dato <br> <br>
-            <input type="submit">
-        </div>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo">
+        </div><br>
+        <div>
+            <input type="checkbox" id="novedades">
+            <label for="novedades">Deseo recibir informacion sobre novedades y ofertas</label><br><br>
+            <input type="checkbox" id="terminos">
+            <label for="terminos">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre proteccion de datos</label>
+        </div><br>
+        <input type="submit" value="Enviar">
+       
     </form>
 </body>
 </html>
